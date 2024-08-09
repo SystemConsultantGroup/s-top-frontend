@@ -1,0 +1,24 @@
+@import url("src/theme/fonts/pretendard.css");
+
+.element {
+  margin: 10px 0;
+}
+
+.group {
+  display: flex;
+  flex-direction: row; /* 가로로 정렬되도록 설정 */
+}
+
+.radio {
+  margin-right: 10px; /* 각 라디오 버튼 간의 간격 설정 */
+}
+
+.radio label {
+  color: var(--color-onBackground);
+}
+
+.radio input[type="radio"] {
+  accent-color: red; /* 라디오 버튼의 색상을 빨간색으로 변경 */
+}
+
+/* 추가로 필요한 스타일을 여기에 작성할 수 있어 */

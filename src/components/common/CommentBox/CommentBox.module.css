@@ -1,0 +1,96 @@
+@import url("src/theme/fonts/pretendard.css");
+
+.commentBoxContainer {
+  display: flex;
+  align-items: center;
+  width: 100%; /* 가로 길이를 100%로 설정 */
+  max-width: 600px; /* 최대 가로 길이를 설정하여 너무 길어지지 않도록 제한 */
+  padding: 10px;
+  background-color: var(--color-surfaceContainerLowest);
+}
+
+.textareaContainer {
+  display: flex;
+  border: 1.8px solid var(--color-surfaceVariant);
+  overflow: hidden;
+  width: 100%; /* 부모 요소의 너비에 맞게 설정 */
+}
+
+.verticalDivider {
+  border-left: 2px solid var(--color-surfaceVariant); /* 구분선 스타일 */
+}
+
+.textarea {
+  background-color: var(--color-surfaceContainerLowest);
+  flex: 1;
+  padding: 10px;
+  border: none;
+  resize: none;
+  outline: none;
+  font-family: inherit; /* 상속된 폰트 사용 */
+  width: 550px;
+  height: 70px;
+  font-size: 14px;
+  /* vw...? */
+  overflow-wrap: break-word; /* 단어가 길어지면 줄바꿈 */
+  white-space: pre-wrap; /* 연속된 공백과 줄바꿈을 유지 */
+  height: 70px;
+  max-height: 70px; /* 최대 높이 지정 */
+  overflow-y: auto; /* 세로 스크롤바 추가 */
+}
+
+.button {
+  width: 70px;
+  background-color: var(--color-primary);
+  color: var(--color-onPrimary);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit; /* 상속된 폰트 사용 */
+}
+
+.button:hover {
+  background-color: var(--color-onPrimaryFixedVariant);
+}
+
+.divider {
+  border-top: 2px solid #ccc; /* 굵기를 2px로 조정 */
+  margin: 10px 0; /* 간격을 줄임 */
+}
+
+.commentsList {
+  margin-top: 0px; /* 간격을 줄임 */
+}
+
+.commentItem {
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.commentItem:first-child {
+  border-top: 1px;
+  padding-top: 1px;
+}
+
+.commentAuthor {
+  color: #9f9f9f; /* 글씨 색상을 변경 */
+  margin-bottom: 5px;
+  font-weight: normal; /* 기본값으로 변경 */
+  font-size: 15px;
+}
+
+.commentContent {
+  font-size: 15px; /* 글씨 크기를 줄임 */
+  margin-top: 8px; /* 댓글 내용과 작성자 간의 간격을 추가 */
+  color: #5b5b5b;
+  white-space: pre-wrap; /* 줄바꿈을 유지 */
+  width: 100%;
+  overflow-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
+  max-width: 620px;
+}
+
+.commentTitle {
+  font-weight: bold; /* h3 태그 bold 처리 */
+}

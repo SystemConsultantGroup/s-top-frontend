@@ -1,0 +1,32 @@
+@import url("src/theme/fonts/pretendard.css");
+/* import { Pretendard } from "./fonts"; 이렇게 쓰는거랑 무슨 차이지...?? 일케 써야되는건감*/
+
+.tableContainer {
+  padding: 20px;
+  background-color: var(--color-surfaceContainerLowest); /* 배경색을 하얀색으로 설정 */
+  border-radius: 0; /* 모서리를 90도로 설정 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Pretendard Variable", __Pretendard_Fallback_e223ab, sans-serif;
+  /* color: #000; */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px; /* 행 간 간격을 유지 */
+  padding-left: 20px; /* 열 간격을 늘리기 위해 좌우 패딩 조정 */
+  padding-right: 20px; /* 열 간격을 늘리기 위해 좌우 패딩 조정 */
+  text-align: left;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table th {
+  border-bottom: 2px solid var(--color-onBackground);
+}
